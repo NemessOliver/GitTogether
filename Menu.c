@@ -8,9 +8,9 @@ do
 
 if (OP == 1)
 {
-	printf("%d * %d = %d\n" = V1, V2,V1 + V2);
+	return;
 }
 else
 {
-	printf("%d * %d = %d\n" = V1, V2,V1 * V2);
+	return;
 }
