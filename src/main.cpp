@@ -11,7 +11,7 @@ void loop() {
   // put your main code here, to run repeatedly:
 }
 
-// Turn the built-in LED on for 1 s, then off for 1 s.
+// turn the built-in LED on for 1s, then off for 1s
 void blink() {
   digitalWrite(LED_BUILTIN, HIGH);
   delay(1000);
