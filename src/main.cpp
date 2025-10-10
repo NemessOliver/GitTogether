@@ -4,7 +4,8 @@
 void blink();
 
 void setup() {
-  // put your setup code here, to run once:
+  Serial.begin(9600);
+  delay(1000);
 }
 
 
@@ -12,14 +13,15 @@ void loop() {
   int OP;
 
   do {
-    printf("Enter 1 or 2 for the operation: /n");
-    scanf("%d", &OP);
+    Serial.println("Enter 1 or 2 for the operation:");
+    while (Serial.available() == 0) {
+    }
+    OP = Serial.parseInt();
   } while (OP > 2 || OP < 1);
 
-    if (OP == 1) {
+  if (OP == 1) {
     return;
-  }
-  else {
+  } else {
     return;
   }
 }
