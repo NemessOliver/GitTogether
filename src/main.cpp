@@ -4,12 +4,28 @@
 void blink();
 
 void setup() {
-  // put your setup code here, to run once:
+  Serial.begin(9600);
+  delay(1000);
 }
 
+
 void loop() {
-  // put your main code here, to run repeatedly:
+  int OP;
+
+  do {
+    Serial.println("Enter 1 or 2 for the operation:");
+    while (Serial.available() == 0) {
+    }
+    OP = Serial.parseInt();
+  } while (OP > 2 || OP < 1);
+
+  if (OP == 1) {
+    return;
+  } else {
+    return;
+  }
 }
+
 
 // turn the built-in LED on for 1s, then off for 1s
 void blink() {
